@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.cartaoP{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width:370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.cartaoP::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0px 0px;
+    background-color: #952cff;
+}
+.moldura{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #952cff;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.moldura .imagemContato{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.cartaoP .texto-nome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.texto-nome .nome{
+    font-size: 22px;
+    font-weight: 500;
+}
+.texto-nome .profissao{
+    font-size: 15px;
+    font-weight: 400;
+}
+.cartaoP .redes-sociais{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.redes-sociais .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius:50% ;
+    margin: 0 8px;
+    background-color: #952cff;
+    text-decoration: none;
+}
+
+.cartaoP .botoes{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.botoes .button{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    border-radius: 24px;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #952cff;
+    cursor: pointer; /*faz a setinha do navegador virar uma mãozinha quando passar em cima dos botoes*/
+    transition: all 0.3s ease; /*efeito de transição para quando algum elemento mudar*/
+
+}
+.botoes .button:hover{ /*quando o mouse passar em cima do botao ele vai ficar um roxo mais escuro*/
+    background-color: #7518d2;
+}
+.cartaoP .analises{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analises .dados{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border: 2px solid #f7f7f7;
+}
+.dados i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.dados:last-child { /* tirou a borda desse ultimo dado */
+    border-right: none;
+}
